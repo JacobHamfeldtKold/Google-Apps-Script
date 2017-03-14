@@ -1,6 +1,6 @@
 # Google-Apps-Script
 
-Put a command like this in the top left cell. 
+Put a command like this in the top left cell of all sheets in the same spreadsheet to import sheets into the same spreadsheet. The "select * WHERE Col1 is not Null "    part is nescescary to prevent the GAS command getDataRange from not selecting all the empty cells that would otherwise come from the importet sheet.    
 
 =QUERY(IMPORTRANGE("1lkXFdivuMynkpqOlP6ZtFPNbgpfbspxyP5mYQccGKJY", "ark1!A:M"),"select * WHERE Col1 is not Null ", 1)
 
